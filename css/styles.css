@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../images/bg-desktop.svg");
+    /*
+    background-image: url("../../../huddle-landing-page-with-single-introductory-section-master/design/mobile-design.jpg");*/
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    display: grid;
+    grid-template-areas: "image text"
+                         "footer footer";
+}
+
+.image-div {
+    padding-left: 4.55em;
+    padding-top: 3em;
+    grid-area: image;
+}
+
+.image-div svg {
+    display: block;
+}
+
+.image-div svg:nth-child(1) {
+    width: 211px;
+    margin-bottom: 5em;
+}
+
+.text-div {
+    grid-area: text;
+    padding-left: 3.3em;
+    padding-top: 3em;
+    padding-right: 5em;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 4.7em;
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+}
+
+.text-div p {
+    font-size: 1.1rem;
+    line-height: 1.65rem;
+    letter-spacing: 0.015rem;
+    margin-bottom: 1.43em;
+}
+
+.button {
+    display: block;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    text-decoration: none;
+    width: 38%;
+    padding: 0.9em 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    border-radius: 3rem;
+    margin-bottom: 10.2em;
+    box-shadow: 5px 10px 10px rgb(0 0 0 / 10%);
+}
+
+.button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+
+.social {
+    text-align: right;
+}
+
+.social i {
+    border: 1px solid white;
+    border-radius: 100%;
+    padding: 0.6em;
+    margin-left: 0.5em;
+    font-size: 1.2rem;
+    width: 2.6rem;
+    height: 2.6rem;
+    text-align: center;
+}
+
+.social i:hover {
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+
+footer {
+    grid-area: footer;
+    align-self: end;
+    text-align: center;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (width > 1440px) {
+    body {
+        background-size: cover;
+        height: 100VH;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .container {
+        grid-template-areas: "image"
+                             "text"
+                             "footer";
+
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: url("../images/bg-mobile.svg");
+    }
+
+}
