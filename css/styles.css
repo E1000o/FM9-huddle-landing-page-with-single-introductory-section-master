@@ -19,7 +19,7 @@ body {
     display: grid;
     grid-template-areas: "image text"
                          "footer footer";
-                         grid-template-columns: 54.3% auto;
+    grid-template-columns: 54.3% auto;
 }
 
 .image-div {
@@ -32,12 +32,6 @@ body {
     display: block;
 }
 
-/*
-.image-div svg:nth-child(1) {
-    width: 211px;
-    margin-bottom: 5em;
-}
-*/
 .illustration-mockups {
     width: 100%;
 }
@@ -133,17 +127,7 @@ footer {
         height: 100VH;
     }
 }
-/*
-@media (max-width: 1200px) {
 
-    .container {
-        grid-template-areas: "image"
-                             "text"
-                             "footer";
-
-    }
-}
-*/
 @media (max-width: 768px) {
 
     .container {
