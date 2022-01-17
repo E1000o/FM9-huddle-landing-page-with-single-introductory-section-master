@@ -13,7 +13,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/huddle-landing-page-single-intro-section-html-css-css-grid-Vz-yzWpUW
 - Live Site URL: https://lucid-hoover-68ff5f.netlify.app/
 
 ## My process
