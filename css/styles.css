@@ -6,8 +6,6 @@
 
 body {
     background-image: url("../images/bg-desktop.svg");
-    /*
-    background-image: url("../../../huddle-landing-page-with-single-introductory-section-master/design/mobile-design.jpg");*/
     background-color: hsl(257, 40%, 49%);
     background-repeat: no-repeat;
     font-family: 'Open Sans', sans-serif;
@@ -21,6 +19,7 @@ body {
     display: grid;
     grid-template-areas: "image text"
                          "footer footer";
+                         grid-template-columns: 54.3% auto;
 }
 
 .image-div {
@@ -33,9 +32,21 @@ body {
     display: block;
 }
 
+/*
 .image-div svg:nth-child(1) {
     width: 211px;
     margin-bottom: 5em;
+}
+*/
+.illustration-mockups {
+    width: 100%;
+}
+
+.logo {
+    width: 30%;
+    margin-top: 0.4em;
+    margin-left: -0.1em;
+    margin-bottom: 5.05em;
 }
 
 .text-div {
@@ -73,7 +84,7 @@ h1 {
     font-size: 1.1rem;
     border-radius: 3rem;
     margin-bottom: 10.2em;
-    box-shadow: 5px 10px 10px rgb(0 0 0 / 10%);
+    box-shadow: 5px 10px 10px rgb(0 0 0 / 20%);
 }
 
 .button:hover {
@@ -113,16 +124,16 @@ footer {
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: hsl(300, 69%, 71%); 
 }
 
-@media (width > 1440px) {
+@media (min-width: 1441px) {
     body {
         background-size: cover;
         height: 100VH;
     }
 }
-
+/*
 @media (max-width: 1200px) {
 
     .container {
@@ -132,10 +143,80 @@ footer {
 
     }
 }
-
+*/
 @media (max-width: 768px) {
+
+    .container {
+        grid-template-areas: "image"
+                             "text"
+                             "footer";
+                             grid-template-columns: auto;
+        padding: 0 2.35em;
+    }
+
     body {
         background-image: url("../images/bg-mobile.svg");
+    }
+
+    .image-div {
+        padding-left: 0;
+        padding-top: 0;
+        grid-area: image;
+    }
+
+    .logo {
+        width: 43.5%;
+        margin-top: 2em;
+        margin-left: -0.3em;
+        margin-bottom: 3.5em;
+    }
+
+    .text-div {
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 2.3em;
+        margin-bottom: 0.56em;
+        font-size: 1.5em;
+    }
+
+    .text-div {
+        padding: 0;
+    }
+
+    .text-div p {
+        font-size: 1rem;
+        line-height: 1.53rem;
+        letter-spacing: initial;
+        margin-bottom: 1.4em;
+    }
+
+    .button {
+        margin: 0 auto 5em;
+        width: 67%;
+        font-size: 0.79rem;
+    }
+
+    .social {
+        text-align: center;
+    }
+
+    .social i {
+        padding: 0.6em;
+        margin-left: 0;
+        font-size: 0.8rem;
+        width: 1.8rem;
+        height: 1.8rem;
+        text-align: center;
+    }
+
+    .social i:nth-child(2) {
+        margin: 0 0.4em;
+    }
+
+    footer {
+        padding-top: 2em;
     }
 
 }
